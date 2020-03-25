@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            animation: anim1 3s linear infinite alternate forwards;
+        }
+
+        .animation:hover {
+            transition: background-color 500ms linear;
+            background-color: #ff0;
+        }
+
+        @keyframes anim1{
+            25% {
+                transform: translateX(100px);
+            }
+            50%, 100% {
+                transform: translate(100px, 150px);
+            }
+            100% {
+                transform: scale(1.5) rotate(145deg);
+                transform-origin: 100px 150px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="animation"></div>
+
+</body>
+</html>
