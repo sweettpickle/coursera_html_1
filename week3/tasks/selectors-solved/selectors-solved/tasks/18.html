@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CSS-селекторы</title>
+        <title>CSS-селекторы | Решение</title>
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
     </head>
     <body>
         <h1 class="global-heading">&nbsp;</h1>
-        <p>Решите задачу, используя <code>background: &lt;color&gt;</code> и <code>color: &lt;color&gt;</code></p>
+        <p>Решите задачу, используя <code>opacity: &lt;value&gt;</code></p>
 
         <main class="global-results">
             <style>
-                /* ваш код здесь... */
-                input:checked ~ .tab {
-                    background: black;
-                    color: white;
+                /* your styles here */
+
+                div
+                {
+                    opacity: .5;
                 }
-                input {
-                    background: #6698ff;
+
+                article:hover div
+                {
+                    opacity: .25;
+                }
+
+                article div:hover
+                {
+                    opacity: 1;
                 }
             </style>
 
-
             <section class="global-result">
                 <article class="global-scope">
-                    <label for="checkbox">Black Theme</label>
-                    <input id="checkbox" type="checkbox" class="b1"><br>
-                    <div class="tab">Text</div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </article>
             </section>
 

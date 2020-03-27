@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CSS-селекторы</title>
+        <title>CSS-селекторы | Решение</title>
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
@@ -12,9 +12,11 @@
 
         <main class="global-results">
             <style>
-                /* ваш код здесь... */
-                a[href$=".zip"]:after {
-                    content: "↓";
+                /* your styles here */
+
+                a[download][href$='.zip']:after
+                {
+                    content: ' ↓';
                 }
             </style>
 

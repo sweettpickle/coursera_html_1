@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CSS-селекторы</title>
+        <title>CSS-селекторы | Решение</title>
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="../global.css">
@@ -12,18 +12,31 @@
 
         <main class="global-results">
             <style>
-                /* ваш код здесь... */
-                .link:hover:not(:last-child) {
+                /* your styles here */
+
+                .link:not([href]):hover
+                {
+                    opacity: .5;
+                }
+
+                .link[href]
+                {
+                    color: #6698ff;
+                }
+
+                .link[href]:visited
+                {
+                    color: #ffb366;
+                }
+
+                .link[href]:hover
+                {
                     color: #ff6698;
                 }
-                .link:last-child:hover {
-                    opacity: 0.5;
-                }
-                .link:first-child:active {
+
+                .link[href]:active
+                {
                     color: #98ff66;
-                }
-                .link:first-child:visited {
-                    color: #ffb366;
                 }
             </style>
 
